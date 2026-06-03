@@ -1,0 +1,74 @@
+* {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  padding: 1rem;
+  background-color: rgb(223, 217, 217);
+  line-height: 1.25;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.header {
+  grid-column: 1/-1;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+section {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.episode-list {
+  display: grid;
+  gap: 0.5rem;
+}
+
+ul.episode-list {
+  list-style: none;
+}
+
+li,
+.details {
+  background-color: white;
+  border: 2px solid rgb(118, 1, 9);
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+.selected {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.details p {
+  max-width: 500px;
+}
+
+button {
+  padding: 0.5rem;
+  border: 2px solid rgb(118, 1, 9);
+  color: white;
+  background-color: rgb(118, 1, 9);
+  border-radius: 8px;
+  align-self: start;
+}
+
+@media (min-width: 650px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+}
